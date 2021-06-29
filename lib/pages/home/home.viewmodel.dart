@@ -1,33 +1,35 @@
 // ViewModel
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'page1/page1.view.dart';
-import 'page2/page2.view.dart';
-import 'page3/page3.view.dart';
+import 'package:loan_disposal_app/pages/home/main/main.view.dart';
+import 'package:loan_disposal_app/pages/home/my/my.view.dart';
 
 class HomeViewModel extends ChangeNotifier {
   int currentIndex = 0;
 
-  List<Map<String, dynamic>> pageList = [
-    {
-      "title": 'page1',
-      "icon": Icon(Icons.panorama_fish_eye),
-      "widget": Page1View(),
-    },
-    {
-      "title": 'page2',
-      "icon": Icon(Icons.school),
-      "widget": Page2View(),
-    },
-    {
-      "title": 'page3',
-      "icon": Icon(Icons.people),
-      "widget": Page3View(),
-    }
+  List<PageItemConfig> pageList = [
+    new PageItemConfig("首页", Icons.home, MainView()),
+    new PageItemConfig("我的", Icons.person_rounded, MyView())
   ];
 
   void onChangePage(int index) {
     currentIndex = index;
     notifyListeners();
   }
+}
+
+/// 子页面配置
+class PageItemConfig {
+  /// 标题
+  String title;
+
+  IconData _icon;
+
+  /// 页面部件
+  Widget page;
+
+  /// 图标
+  Icon get icon => Icon(this._icon);
+
+  PageItemConfig(this.title, this._icon, this.page);
 }

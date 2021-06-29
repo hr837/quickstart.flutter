@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:stacked/stacked.dart';
-import 'package:xbt_app/store/auth.store.dart';
+import 'package:loan_disposal_app/store/auth.store.dart';
 import 'page1.viewmodel.dart';
 
 class Page1View extends ViewModelBuilderWidget<Page1ViewModel> {

@@ -2,10 +2,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:logger/logger.dart';
-import 'package:xbt_app/pages/home/home.view.dart';
-import 'package:xbt_app/pages/login/login.view.dart';
-import 'package:xbt_app/pages/video/video.view.dart';
-import 'package:xbt_app/store/auth.store.dart';
+import 'package:loan_disposal_app/pages/home/home.view.dart';
+import 'package:loan_disposal_app/pages/login/login.view.dart';
+import 'package:loan_disposal_app/pages/video/video.view.dart';
+import 'package:loan_disposal_app/store/auth.store.dart';
 import 'app.widget.dart';
 import 'guards/auth.guard.dart';
 
@@ -42,12 +42,12 @@ class AppModule extends Module {
   // Provide all the routes for your module
   @override
   final List<ModularRoute> routes = [
-    ChildRoute('/',
-        child: (context, args) => HomeView(), guards: [AuthGuard()]),
-    ChildRoute(
-      '/login',
-      child: (context, args) => LoginView(),
-    ),
+    // ChildRoute('/',
+    //     child: (context, args) => HomeView(), guards: [AuthGuard()]),
+    // ChildRoute(
+    //   '/login',
+    //   child: (context, args) => LoginView(),
+    // ),
     ChildRoute(
       '/home',
       child: (context, args) => HomeView(),

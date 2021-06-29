@@ -3,7 +3,7 @@
 
 import 'dart:core';
 import 'package:dart_json_mapper/src/model/annotations.dart' as prefix0;
-import 'package:xbt_app/models/user.model.dart' as prefix1;
+import 'package:loan_disposal_app/models/user.model.dart' as prefix1;
 
 // ignore_for_file: prefer_adjacent_string_concatenation
 // ignore_for_file: prefer_collection_literals

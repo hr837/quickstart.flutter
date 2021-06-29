@@ -5,10 +5,10 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:stacked/stacked.dart';
-import 'package:xbt_app/animations/fade.animation.dart';
-import 'package:xbt_app/pages/login/components/phone-screen.dart';
-import 'package:xbt_app/pages/login/components/verify-screen.dart';
-import 'package:xbt_app/pages/login/components/welcome-screen.dart';
+import 'package:loan_disposal_app/animations/fade.animation.dart';
+import 'package:loan_disposal_app/pages/login/components/phone-screen.dart';
+import 'package:loan_disposal_app/pages/login/components/verify-screen.dart';
+import 'package:loan_disposal_app/pages/login/components/welcome-screen.dart';
 import 'login.viewmodel.dart';
 
 class LoginView extends ViewModelBuilderWidget<LoginViewModel> {
@@ -32,16 +32,16 @@ class LoginView extends ViewModelBuilderWidget<LoginViewModel> {
   ) {
     return Scaffold(
         body: PageView(
-          scrollDirection: Axis.vertical,
-          controller: model.pageController,
-          pageSnapping: false,
-          physics: NeverScrollableScrollPhysics(),
-          children: <Widget>[
-            WelcomeScreen(),
-            PhoneScreen(),
-            VerifyScreen(),
-          ],
-        ));
+      scrollDirection: Axis.vertical,
+      controller: model.pageController,
+      pageSnapping: false,
+      physics: NeverScrollableScrollPhysics(),
+      children: <Widget>[
+        WelcomeScreen(),
+        PhoneScreen(),
+        VerifyScreen(),
+      ],
+    ));
   }
 
   // @override

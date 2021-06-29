@@ -6,10 +6,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:logger/logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:xbt_app/core/model.dart';
-import 'package:xbt_app/models/user.model.dart';
-import 'package:xbt_app/services/user.service.dart';
-import 'package:xbt_app/store/auth.store.dart';
+import 'package:loan_disposal_app/core/model.dart';
+import 'package:loan_disposal_app/models/user.model.dart';
+import 'package:loan_disposal_app/services/user.service.dart';
+import 'package:loan_disposal_app/store/auth.store.dart';
 
 class LoginViewModel extends ChangeNotifier {
   final userService = UserService();

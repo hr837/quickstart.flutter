@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:xbt_app/core/http/request-service-config.dart';
+import 'package:loan_disposal_app/core/http/request-service-config.dart';
 
 class UserController {
   static final service = 'client';

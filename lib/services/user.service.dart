@@ -1,6 +1,6 @@
-import 'package:xbt_app/config/services/user.controller.dart';
-import 'package:xbt_app/core/http/request-option.dart';
-import 'package:xbt_app/core/http/net.service.dart';
+import 'package:loan_disposal_app/config/services/user.controller.dart';
+import 'package:loan_disposal_app/core/http/request-option.dart';
+import 'package:loan_disposal_app/core/http/net.service.dart';
 
 class UserService {
   final net = NetService();

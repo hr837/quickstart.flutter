@@ -1,6 +1,7 @@
 // View
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:loan_disposal_app/config/theme.dart';
 import 'package:stacked/stacked.dart';
 import 'home.viewmodel.dart';
 
@@ -24,15 +25,15 @@ class HomeView extends ViewModelBuilderWidget<HomeViewModel> {
     Widget child,
   ) {
     return Scaffold(
-      body: model.pageList[model.currentIndex]["widget"],
+      body: model.pageList[model.currentIndex].page,
       bottomNavigationBar: BottomNavigationBar(
         items: model.pageList
-            .map((page) => BottomNavigationBarItem(
-                icon: page['icon'], title: Text(page['title'])))
+            .map((page) =>
+                BottomNavigationBarItem(icon: page.icon, label: page.title))
             .toList(),
         currentIndex: model.currentIndex,
-        fixedColor: Colors.black,
         type: BottomNavigationBarType.fixed,
+        fixedColor: ThemeColor.primaryColor,
         onTap: model.onChangePage,
       ),
     );

@@ -1,5 +1,5 @@
 import 'package:mobx/mobx.dart';
-import 'package:xbt_app/models/user.model.dart';
+import 'package:loan_disposal_app/models/user.model.dart';
 
 // Include generated file
 part 'auth.store.g.dart';

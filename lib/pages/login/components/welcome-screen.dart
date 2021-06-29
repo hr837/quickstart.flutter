@@ -1,8 +1,8 @@
 // 登录Container
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:xbt_app/animations/fade.animation.dart';
-import 'package:xbt_app/pages/login/login.viewmodel.dart';
+import 'package:loan_disposal_app/animations/fade.animation.dart';
+import 'package:loan_disposal_app/pages/login/login.viewmodel.dart';
 
 class WelcomeScreen extends ViewModelWidget<LoginViewModel> {
   @override

@@ -4,11 +4,11 @@ import 'package:bot_toast/bot_toast.dart';
 import 'package:dio/dio.dart';
 import 'package:logger/logger.dart';
 import 'package:rxdart/subjects.dart';
-import 'package:xbt_app/config/app.config.dart';
-import 'package:xbt_app/core/http/request-option.dart';
+import 'package:loan_disposal_app/config/app.config.dart';
+import 'package:loan_disposal_app/core/http/request-option.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart' as pretty;
-import 'package:xbt_app/core/http/request-service-config.dart';
-import 'package:xbt_app/core/model.dart';
+import 'package:loan_disposal_app/core/http/request-service-config.dart';
+import 'package:loan_disposal_app/core/model.dart';
 
 class NetService {
   Dio dio;

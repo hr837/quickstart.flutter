@@ -1,4 +1,4 @@
-package com.example.xbt_app
+package com.example.loan_disposal_app
 
 import io.flutter.embedding.android.FlutterActivity
 
