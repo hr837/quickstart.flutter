@@ -1,14 +1,24 @@
 // ViewModel
+import 'dart:async';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:loan_disposal_app/utils/filter.dart';
 import 'package:logger/logger.dart';
 
-class MainViewModel extends ChangeNotifier {
-  final logger = Modular.get<Logger>();
+final logger = Modular.get<Logger>();
 
-  String moneyTotal = "";
+class MainViewModel extends ChangeNotifier {
+  String moneyTotal = '0.00';
 
   MainViewModel() {
-    moneyTotal = '1234.00';
+    moneyTotal = toThousands(123456);
+    Timer(Duration(seconds: 5), _updateMoney);
+  }
+
+  void _updateMoney() {
+    print('123');
+    moneyTotal = toThousands(1000000);
+    notifyListeners();
   }
 }
